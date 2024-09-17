@@ -1,9 +1,6 @@
 package hello.core.member;
 
 
-import hello.core.discoount.DiscountPolicy;
-import hello.core.order.OrderService;
-
 // MemberService 구현체
 public class MemberServiceImpl implements MemberService {
 
@@ -17,8 +14,6 @@ public class MemberServiceImpl implements MemberService {
     public MemberServiceImpl(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
-
-
 
     // 할인 정책 인터페이스 구현체 호출
     //private final DiscountPolicy discountPolicy = new FixDiscountPolicy();

@@ -9,7 +9,13 @@ import hello.core.member.MemberServiceImpl;
 // 순수 자바코드로 개발
 public class MemberApp {
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
+
+        // MemberService memberService = new MemberServiceImpl();
+
+        // AppConfig로 DIP, OCP를 지킨다.
+        AppConfig appConfig = new AppConfig();
+
+        MemberService memberService = appConfig.memberService();
 
         Member member = new Member(1L, "memberA", Grade.VIP);
         memberService.join(member);
