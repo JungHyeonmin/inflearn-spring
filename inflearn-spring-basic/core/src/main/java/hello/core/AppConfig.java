@@ -33,5 +33,5 @@ public class AppConfig {
     public OrderService orderService() {
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
-
+ 
 }
