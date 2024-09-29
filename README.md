@@ -1,1 +1,1 @@
-# inflearn-spring
+# inflearn-kyh-spring
